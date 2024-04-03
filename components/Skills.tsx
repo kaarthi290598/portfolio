@@ -54,7 +54,7 @@ const Skills = () => {
 
   return (
     <section
-      className="flex flex-col items-center justify-center   padding-container gap-8 max-container mt-10 py-20 z-30"
+      className="flex flex-col items-center    padding-container gap-8 max-container  mt-20 z-30 "
       id="skills"
     >
       <h1 className="violet_gradient head_text text-center md:text-start z-30">
@@ -62,7 +62,7 @@ const Skills = () => {
       </h1>
 
       <motion.div
-        className="w-[80%] md:w-full"
+        className=" w-full"
         variants={container}
         ref={cardRef}
         initial="hidden"

@@ -26,7 +26,7 @@ export const HoverEffect = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5  py-10 gap-5 ",
+        "grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5  py-5 md:py-10 gap-5 ",
         className
       )}
     >
@@ -76,15 +76,11 @@ export const Card = ({
   return (
     <motion.div
       className={cn(
-        "rounded-2xl h-full w-full p-4 overflow-hidden bg-zinc-50 border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20 text-black shadow-xl ",
+        "rounded-2xl h-full w-full px-4 py-3 overflow-hidden bg-zinc-50 border-transparent  group-hover:border-slate-700 relative z-20 text-black shadow-xl flex flex-col text-center  items-center  gap-4 ",
         className
       )}
     >
-      <div className="relative z-50  ">
-        <div className=" p-1 md:p-2 flex md:flex-col  items-center  justify-center gap-4 ">
-          {children}
-        </div>
-      </div>
+      {children}
     </motion.div>
   );
 };
@@ -96,7 +92,12 @@ export const CardTitle = ({
   children: React.ReactNode;
 }) => {
   return (
-    <h4 className={cn(" font-bold tracking-wide w-full ", className)}>
+    <h4
+      className={cn(
+        " font-semibold text-sm md:text-base tracking-wide  ",
+        className
+      )}
+    >
       {children}
     </h4>
   );
@@ -109,12 +110,7 @@ export const CardDescription = ({
   children: React.ReactNode;
 }) => {
   return (
-    <p
-      className={cn(
-        "  tracking-wide leading-relaxed text-sm w-full",
-        className
-      )}
-    >
+    <p className={cn("  tracking-wide leading-relaxed text-sm ", className)}>
       {children}
     </p>
   );

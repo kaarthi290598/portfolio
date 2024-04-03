@@ -52,7 +52,7 @@ const Contact = () => {
 
   return (
     <section
-      className=" flex flex-col items-center padding-container gap-10 max-container p-10   "
+      className=" flex flex-col items-center padding-container gap-10 max-container  mt-20   "
       id="contact"
     >
       <h1 className=" black_gradient head_text text-center z-30  ">Contact</h1>
