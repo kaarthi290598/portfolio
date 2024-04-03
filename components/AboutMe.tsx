@@ -38,7 +38,7 @@ function AboutMe() {
           in app development and business analysis.
         </p>
         <Link href="#contact">
-          <ColourButton color="orange">Hire me</ColourButton>
+          <ColourButton color="orange">Contact me</ColourButton>
         </Link>
       </div>
     </section>

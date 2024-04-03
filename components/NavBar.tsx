@@ -54,7 +54,7 @@ export default function NavBar() {
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end"></NavbarContent>
-      <NavbarMenu>
+      <NavbarMenu className=" divide-y-2">
         <NavbarMenuItem>
           <Link
             color="foreground"

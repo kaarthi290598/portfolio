@@ -165,34 +165,40 @@ const CardUI = ({ project }: CardProps) => {
                       ))}
                     </ul>
                   </div>
-                  <div className="flex gap-4 mt-2">
-                    {project.links.github && (
-                      <Button
-                        aria-label="Like"
-                        as={Link}
-                        href={project.links.github}
-                        endContent={<FaGithub />}
-                        color="secondary"
-                        size="sm"
-                        target="_blank"
-                      >
-                        Github
-                      </Button>
-                    )}
 
-                    {project.links.live && (
-                      <Button
-                        aria-label="Like"
-                        as={Link}
-                        href={project.links.live}
-                        endContent={<HiMiniLink />}
-                        color="success"
-                        size="sm"
-                        target="_blank"
-                      >
-                        Live
-                      </Button>
-                    )}
+                  <div>
+                    <h1 className="font-bold text-lg">Links</h1>
+                    <div className="flex gap-4 mt-2">
+                      {project.links.github && (
+                        <Button
+                          aria-label="Like"
+                          as={Link}
+                          href={project.links.github}
+                          endContent={<FaGithub />}
+                          color="secondary"
+                          size="sm"
+                          target="_blank"
+                          className="font-bold"
+                        >
+                          Github
+                        </Button>
+                      )}
+
+                      {project.links.live && (
+                        <Button
+                          aria-label="Like"
+                          as={Link}
+                          href={project.links.live}
+                          endContent={<HiMiniLink />}
+                          color="success"
+                          className="text-white font-bold"
+                          size="sm"
+                          target="_blank"
+                        >
+                          Live
+                        </Button>
+                      )}
+                    </div>
                   </div>
                 </ModalBody>
                 <ModalFooter>
