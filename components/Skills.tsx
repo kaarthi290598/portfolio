@@ -50,7 +50,7 @@ const Skills = () => {
 
   const cardRef = useRef(null);
 
-  const isInView = useInView(cardRef, { once: true }); // Observe 50% of the element
+  const isInView = useInView(cardRef);
 
   return (
     <section
@@ -67,7 +67,7 @@ const Skills = () => {
         ref={cardRef}
         initial="hidden"
         animate={isInView ? "visible" : {}}
-        transition={{ type: "spring", damping: 20 }}
+        transition={{ type: "spring" }}
       >
         <HoverEffect items={skills} />
       </motion.div>
