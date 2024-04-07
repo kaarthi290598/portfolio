@@ -7,6 +7,8 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import ColourButton from "./ui/ColourButton";
 import Link from "next/link";
+import Lottie from "lottie-react";
+import animationData from "../public/assets/lotties/laptoplotties.json";
 
 const words = [
   {
@@ -28,16 +30,26 @@ const words = [
 ];
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center py-20 px-5 md:py-40 gap-8 lg:gap-12 h-full lg:h-screen">
-      <BackgroundBeams className="  " />
+    <section className="flex flex-col items-center py-20 px-5 md:py-30  lg:gap-10 h-full lg:h-screen">
+      {/* <BackgroundBeams /> */}
       <div className=" w-full  relative z-30  ">
         <div className="    flex flex-col items-center gap-6   ">
-          <h1 className=" z-10 text-5xl md:text-7xl lg:text-9xl  bg-clip-text text-transparent blue_gradient  text-center  font-semibold font-cinzel">
-            Kaarthikeyan
+          <h1 className=" z-10 text-5xl md:text-7xl lg:text-8xl  bg-clip-text text-transparent blue_gradient  text-center  font-semibold font-cinzel">
+            Kaarthikeyan{" "}
           </h1>
           <TypewriterEffectSmooth words={words} />
         </div>
       </div>
+
+      <div>
+        <Lottie
+          animationData={animationData}
+          className="flex justify-center items-center
+          h-[300px] lg:h-[350px]"
+          loop={true}
+        />
+      </div>
+
       <motion.div
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}

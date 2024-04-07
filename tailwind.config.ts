@@ -21,6 +21,9 @@ const config: Config = {
       fontFamily: {
         cinzel: ["Cinzel", "serif"],
       },
+      height: {
+        "full-viewport": "100dvh",
+      },
     },
   },
   darkMode: "class",

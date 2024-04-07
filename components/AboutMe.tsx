@@ -10,7 +10,7 @@ import Link from "next/link";
 function AboutMe() {
   return (
     <section
-      className="flex flex-col md:flex-row  justify-between  items-center flex-between   padding-container gap-10 max-container"
+      className="flex flex-col md:flex-row  justify-between  items-center flex-between   padding-container gap-10 max-container mt-10"
       id="about"
     >
       <Image
@@ -21,8 +21,8 @@ function AboutMe() {
         className="z-20"
       />
 
-      <div className="z-20 flex flex-col gap-6 items-start ">
-        <h1 className="orange_gradient head_text text-center md:text-start">
+      <div className="z-20 flex flex-col gap-8 items-start ">
+        <h1 className="orange_gradient head_text flex items-center justify-center w-full lg:justify-start">
           About me
         </h1>
         <p className="text-red ">
