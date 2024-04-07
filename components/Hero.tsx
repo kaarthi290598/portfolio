@@ -41,18 +41,17 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* <div>
+      <div>
         <Lottie
           animationData={animationData}
           className="flex justify-center items-center
-          h-[300px] lg:h-[350px]"
+          h-[300px] lg:h-[350px] w-auto"
           loop={true}
+          preload="auto"
         />
-      </div> */}
+      </div>
 
       <motion.div
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
         transition={{
           type: "spring",
           stiffness: 260,
