@@ -24,6 +24,11 @@ const config: Config = {
       height: {
         "full-viewport": "100dvh",
       },
+      screens: {
+        xs: "400px",
+        "3xl": "1680px",
+        "4xl": "2200px",
+      },
     },
   },
   darkMode: "class",

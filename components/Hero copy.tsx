@@ -30,7 +30,7 @@ const words = [
 ];
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center   lg:gap-10 h-full 3xl:h-screen pt-5 ">
+    <section className="flex flex-col items-center py-20 px-5 md:py-30  lg:gap-10 h-full ">
       <BackgroundBeams />
       <div className=" w-full  relative z-30  ">
         <div className="    flex flex-col items-center gap-6   ">
@@ -41,7 +41,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="">
+      <div>
         <Lottie
           animationData={animationData}
           className="flex justify-center items-center
