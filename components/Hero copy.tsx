@@ -1,8 +1,6 @@
 "use client";
 import React from "react";
 import { BackgroundBeams } from "./ui/background-beams";
-
-import { BorderButton } from "./ui/moving-border";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import ColourButton from "./ui/ColourButton";
@@ -30,7 +28,7 @@ const words = [
 ];
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center py-20 px-5 md:py-30  lg:gap-10 h-full ">
+    <section className="flex flex-col items-center gap-20  lg:gap-10 h-full-viewport md:h-full 3xl:h-screen pt-5 ">
       <BackgroundBeams />
       <div className=" w-full  relative z-30  ">
         <div className="    flex flex-col items-center gap-6   ">
@@ -41,7 +39,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div>
+      <div className="">
         <Lottie
           animationData={animationData}
           className="flex justify-center items-center

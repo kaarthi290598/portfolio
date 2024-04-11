@@ -1,14 +1,13 @@
 "use client";
 import React from "react";
 import { BackgroundBeams } from "./ui/background-beams";
-
-import { BorderButton } from "./ui/moving-border";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { motion, stagger, useAnimate, useInView } from "framer-motion";
 import ColourButton from "./ui/ColourButton";
 import Link from "next/link";
 import Lottie from "lottie-react";
 import animationData from "../public/assets/lotties/laptoplotties.json";
+import { Skeleton } from "@nextui-org/react";
 
 const words = [
   {
@@ -30,8 +29,7 @@ const words = [
 ];
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center   lg:gap-10 h-full 3xl:h-screen pt-5 ">
-      <BackgroundBeams />
+    <section className="flex flex-col items-center gap-20  lg:gap-10 min-h-full-viewport  pt-5 ">
       <div className=" w-full  relative z-30  ">
         <div className="    flex flex-col items-center gap-6   ">
           <h1 className=" z-10 text-5xl md:text-7xl lg:text-8xl  bg-clip-text text-transparent blue_gradient  text-center  font-semibold font-cinzel">
@@ -41,7 +39,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="">
+      <div>
         <Lottie
           animationData={animationData}
           className="flex justify-center items-center
