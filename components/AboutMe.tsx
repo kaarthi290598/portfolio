@@ -10,7 +10,7 @@ import Link from "next/link";
 function AboutMe() {
   return (
     <section
-      className="flex flex-col md:flex-row  justify-between  items-center flex-between   padding-container gap-16 max-container mt-20 lg:h-[100dvh]"
+      className="flex flex-col lg:flex-row  justify-center gap-16 lg:gap-20   items-center    padding-container   max-container  md:min-h-[100dvh] mt-10"
       id="about"
     >
       <Image
@@ -18,14 +18,14 @@ function AboutMe() {
         alt="me"
         width={350}
         height={350}
-        className="z-20"
+        className="z-20 "
       />
 
-      <div className="z-20 flex flex-col gap-8 items-start ">
-        <h1 className="orange_gradient head_text flex items-center justify-center w-full lg:justify-start">
+      <div className="z-20 flex flex-col gap-10 items-center justify-center  ">
+        <h1 className="orange_gradient head_text   lg:justify-start">
           About me
         </h1>
-        <p className="text-red ">
+        <p className="text-red max-w-[500px] ">
           Inspired by a passion for technology, I embarked on a journey of
           self-learning to become a proficient app developer. With a solid
           foundation in business analysis, I bring a unique perspective to my
@@ -37,7 +37,7 @@ function AboutMe() {
           ideas into impactful digital experiences, fueled by my dual expertise
           in app development and business analysis.
         </p>
-        <Link href="#contact">
+        <Link href="#contact" className="">
           <ColourButton color="orange">Contact me</ColourButton>
         </Link>
       </div>

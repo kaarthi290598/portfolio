@@ -29,6 +29,7 @@ const words = [
 const Hero = () => {
   return (
     <section className=" flex flex-col 2xl:flex-row  2xl:h-[90dvh] min-h-[90dvh]   z-30 ">
+      <BackgroundBeams />
       <div className=" relative z-30 flex flex-col items-center justify-center  2xl:w-[60%] 2xl:p-16 gap-12 md:gap-14 2xl:gap-10 2xl:items-start   flex-1">
         <h1 className=" z-10 text-4xl xs:text-5xl md:text-7xl lg:text-8xl  bg-clip-text text-transparent blue_gradient font-semibold font-cinzel">
           Kaarthikeyan
