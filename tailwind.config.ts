@@ -25,7 +25,9 @@ const config: Config = {
         "full-viewport": "100dvh",
       },
       screens: {
-        xs: "400px",
+        xs: "360px",
+
+        "2xl": "1250px",
         "3xl": "1680px",
         "4xl": "2200px",
       },

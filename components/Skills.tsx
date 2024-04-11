@@ -54,7 +54,7 @@ const Skills = () => {
 
   return (
     <section
-      className="flex flex-col items-center    padding-container gap-8 max-container  mt-20 z-30 "
+      className="flex flex-col items-center padding-container gap-8 max-container  mt-20 z-30 lg:h-[100dvh] "
       id="skills"
     >
       <h1 className="violet_gradient head_text text-center md:text-start z-30">

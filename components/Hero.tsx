@@ -7,7 +7,6 @@ import ColourButton from "./ui/ColourButton";
 import Link from "next/link";
 import Lottie from "lottie-react";
 import animationData from "../public/assets/lotties/laptoplotties.json";
-import { Skeleton } from "@nextui-org/react";
 
 const words = [
   {
@@ -29,38 +28,45 @@ const words = [
 ];
 const Hero = () => {
   return (
-    <section className="flex flex-col items-center gap-20  lg:gap-10 min-h-full-viewport  pt-5 ">
-      <div className=" w-full  relative z-30  ">
-        <div className="    flex flex-col items-center gap-6   ">
-          <h1 className=" z-10 text-5xl md:text-7xl lg:text-8xl  bg-clip-text text-transparent blue_gradient  text-center  font-semibold font-cinzel">
-            Kaarthikeyan
-          </h1>
-          <TypewriterEffectSmooth words={words} />
+    <section className=" flex flex-col 2xl:flex-row  2xl:h-[90dvh] min-h-[90dvh]   z-30 ">
+      <div className=" relative z-30 flex flex-col items-center justify-center  2xl:w-[60%] 2xl:p-16 gap-12 md:gap-14 2xl:gap-10 2xl:items-start   flex-1">
+        <h1 className=" z-10 text-4xl xs:text-5xl md:text-7xl lg:text-8xl  bg-clip-text text-transparent blue_gradient font-semibold font-cinzel">
+          Kaarthikeyan
+        </h1>
+        <TypewriterEffectSmooth words={words} />
+        <div className="flex 2xl:hidden">
+          <Lottie
+            animationData={animationData}
+            className="flex justify-center items-center
+        h-[250px] w-[250px] md:w-[350px] md:h-[350px]  z-30"
+            loop={true}
+            preload="auto"
+            placeholder="Loading"
+          />
         </div>
+        <motion.div
+          transition={{
+            type: "spring",
+            stiffness: 260,
+            damping: 20,
+          }}
+          className="z-30 "
+        >
+          <Link href="#skills">
+            <ColourButton color="blue">Explore my portfolio</ColourButton>
+          </Link>
+        </motion.div>
       </div>
 
-      <div>
+      <div className="hidden 2xl:flex w-full items-center justify-center lg:w-[40%] z-20">
         <Lottie
           animationData={animationData}
           className="flex justify-center items-center
-          h-auto w-auto"
+        h-[450px] w-[450px] "
           loop={true}
           preload="auto"
         />
       </div>
-
-      <motion.div
-        transition={{
-          type: "spring",
-          stiffness: 260,
-          damping: 20,
-        }}
-        className="z-30 "
-      >
-        <Link href="#skills">
-          <ColourButton color="blue">Explore my portfolio</ColourButton>
-        </Link>
-      </motion.div>
     </section>
   );
 };

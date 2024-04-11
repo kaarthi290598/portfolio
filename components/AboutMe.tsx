@@ -10,7 +10,7 @@ import Link from "next/link";
 function AboutMe() {
   return (
     <section
-      className="flex flex-col md:flex-row  justify-between  items-center flex-between   padding-container gap-10 max-container mt-20"
+      className="flex flex-col md:flex-row  justify-between  items-center flex-between   padding-container gap-16 max-container mt-20 lg:h-[100dvh]"
       id="about"
     >
       <Image
