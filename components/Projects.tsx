@@ -78,7 +78,7 @@ const projects = [
 const Projects = () => {
   return (
     <section
-      className="flex flex-col  justify-between  items-center flex-between   padding-container gap-10 max-container mt-20"
+      className="flex flex-col   items-center   padding-container gap-10 max-container mt-20 md:min-h-[100dvh]"
       id="projects"
     >
       <h1 className="blue_gradient head_text text-center md:text-start z-30">
