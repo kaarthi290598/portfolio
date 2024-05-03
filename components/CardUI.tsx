@@ -140,7 +140,7 @@ const CardUI = ({ project }: CardProps) => {
                         <Button
                           aria-label="Like"
                           as={Link}
-                          href={project.links.live}
+                          href={project.links.documentation}
                           endContent={<HiMiniDocument />}
                           color="primary"
                           className="text-white font-bold"

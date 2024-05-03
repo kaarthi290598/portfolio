@@ -10,7 +10,7 @@ const Projects = () => {
   const router = useRouter();
   return (
     <>
-      <section className="z-30 max-container flex flex-col items-start padding-container gap-8  mt-10 ">
+      <section className="z-30 max-container flex flex-col items-start padding-container gap-8  py-10">
         <Button
           isIconOnly
           className="z-30 "

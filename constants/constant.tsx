@@ -34,6 +34,18 @@ export const skills = [
 
 export const webProjects = [
   {
+    title: "Imagnify",
+    description: "AI Image Editing App using prompts ",
+    bigDescription:
+      "Imagnify is a comprehensive AI image editing app where users can utilize prompts to remove objects from an image, change colors, remove backgrounds, and adjust aspect ratios. This is achieved by leveraging the Cloudinary API, and a payment gateway integrated with Stripe enables users to purchase credits.",
+    image: "/assets/images/imagnify.png",
+    stack: ["Next js", "Mongo DB", "Tailwind", "Cloudinary", "Stripe", "Clerk"],
+    links: {
+      github: "https://github.com/kaarthi290598/imagnify",
+      live: "https://imagnify-isp.vercel.app",
+    },
+  },
+  {
     title: "Wild Oasis",
     description: "Hotel booking management app ",
     bigDescription:
