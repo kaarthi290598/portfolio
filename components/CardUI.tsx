@@ -71,14 +71,20 @@ const CardUI = ({ project }: CardProps) => {
           View project details
         </Button>
 
-        <Modal isOpen={isOpen} onOpenChange={onOpenChange} size="2xl">
+        <Modal
+          isOpen={isOpen}
+          onOpenChange={onOpenChange}
+          size="2xl"
+          scrollBehavior="inside"
+          placement="center"
+        >
           <ModalContent className="bg-zinc-50 p-4  ">
             {(onClose) => (
               <>
                 <ModalHeader className="flex flex-col gap-1">
                   {project.title}
                 </ModalHeader>
-                <ModalBody>
+                <ModalBody className=" ">
                   <p>{project.bigDescription}</p>
                   <Image
                     src={project.image}

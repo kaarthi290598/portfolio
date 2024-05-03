@@ -103,7 +103,7 @@ export const dataProjects = [
     description:
       "Utilizing Power BI for In-depth Analysis of HR data of company Atliq",
     bigDescription:
-      "Analyzing HR data for Atliq, Power BI was employed to create a dynamic dashboard showcasing essential KPIs like present, WFH, and leave percentages, along with monthly trends. Leveraging PBI parameters/functions enabled seamless data loading for future months. Utilizing DAX, new categories and columns were crafted to enhance data insights. This project equips Atliq with actionable insights, facilitating smarter workforce planning and decision-making",
+      "Analyzing HR data for Atliq, Power BI was employed to create a dynamic dashboard showcasing essential KPIs like present, WFH, and leave percentages, along with monthly trends. Leveraging PBI parameters/functions enabled seamless data loading for future months.This project equips Atliq smarter workforce planning and decision-making",
     image: "/assets/dataprojects/hrdataanalysis.png",
     stack: ["Power BI", "Power query", "DAX"],
     links: {
