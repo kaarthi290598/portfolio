@@ -43,7 +43,7 @@ body,
 
 .gradient {
   height: fit-content;
-  z-index: 3;
+  z-index: 1;
   width: 100%;
   max-width: 640px;
   background-image: radial-gradient(
@@ -70,6 +70,10 @@ body,
   /* colours */
   .blue_gradient {
     @apply bg-gradient-to-r from-blue-600 to-cyan-600 bg-clip-text text-transparent;
+  }
+
+  .dark-blue_gradient {
+    @apply bg-gradient-to-r from-blue-700 to-cyan-700 bg-clip-text text-transparent;
   }
 
   .orange_gradient {
@@ -106,6 +110,6 @@ Text */
   }
 
   .padding-container {
-    @apply px-10 md:px-10 lg:px-20;
+    @apply px-10 md:px-10 lg:px-16;
   }
 }

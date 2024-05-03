@@ -17,8 +17,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="light lg:scroll-smooth">
       <body className="">
-        <div className="main">
-          <div className="gradient" />
+        <div className="main ">
+          <div className="gradient z-1" />
         </div>
         <Providers>{children}</Providers>
         <Toaster
